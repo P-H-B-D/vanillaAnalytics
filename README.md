@@ -1,4 +1,4 @@
-# quickAnalytics
+# vanillaAnalytics
 Lightweight vanilla JS template for visitor analytics (IP, device, browser) connection with a hosted RDB like Supabase.
 
 Dynamically implemented so that Analytics.js optionally loads and gracefully fails if not present in local path, making it easy to copy and paste into any vanilla JS project.
