@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... other head elements ... -->
+</head>
+<body>
+
+    <!-- ... your body content ... -->
+    <p>Analytics</p>
+    <!-- Load the analytics.js script first -->
+    <script>
+        // Try to dynamically load analytics.js
+        var script = document.createElement('script');
+        script.src = './analytics.js';
+        
+        // Handle the successful loading of analytics.js
+        script.onload = function() {
+            console.log('analytics.js loaded successfully');
+        };
+
+        // Handle errors (e.g., if the file doesn't exist)
+        script.onerror = function() {
+            console.log('Failed to load analytics.js');
+        };
+
+        // Append the script to the body (this starts the loading)
+        document.body.appendChild(script);
+    </script>
+    
+    <!-- ... more body content ... -->
+    <script src="script.js"></script>
+</body>
+</html>
