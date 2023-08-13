@@ -4,7 +4,7 @@ Lightweight vanilla JS template for visitor analytics (IP, device, browser) conn
 Dynamically implemented so that Analytics.js optionally loads and gracefully fails if not present in local path, making it easy to copy and paste into any vanilla JS project.
 
 # To initialize Supabase:
-1. (Create and set up a Supabase instance)[https://supabase.com/].
+1. [Create and set up a Supabase instance](https://supabase.com/).
 2. Run the following SQL to only allow anonymous INSERT access and disable miscellaneous anonymous access to your Postgres RDB where <table> is your table.
 ```SQL
 REVOKE ALL PRIVILEGES ON TABLE "public".<table> FROM "anon";
